@@ -1,0 +1,117 @@
+[2026-04-10T14:05:35Z] === ENRICH ITERATION 5 START | repo=sphinx-doc/sphinx sha=cc7c6f43 ===
+[2026-04-10T14:05:35Z] [iter=5] PHASE START: enrich repo=sphinx-doc/sphinx sha=cc7c6f43 runlog=/home/runner/work/forx/forx/storage/aggregate/lsp/logs/cc7c6f43-enrich-iter-005.log output=/home/runner/work/forx/forx/storage/aggregate/lsp/cc7c6f435ad37bb12264f8118c8461b230e6830c.nq.gz
+[2026-04-10T14:05:47Z] [iter=5] Step 1: Loading AST into disk-backed store mem_mb=78 MB
+[2026-04-10T14:07:05Z] [iter=5] AST store loaded triples=7973172 load_secs=75 mem_mb=1050 MB
+[2026-04-10T14:07:05Z] [iter=5] Step 2: Finding LSP targets mem_mb=1050 MB
+[2026-04-10T14:07:18Z] [iter=5] LSP targets found call_sites=40689 imports=4377 extends=746 implements=0 secs=12
+[2026-04-10T14:07:23Z] [iter=5] Loaded checkpoint partial graph triples=137273
+[2026-04-10T14:07:34Z] [iter=5] Step 2.7: Building position index (one-shot, shared across resolvers) mem_mb=1050 MB
+[2026-04-10T14:08:25Z] [iter=5] Position index built positions=548448 nodes_with_types=686495 secs=51 mem_mb=1790 MB
+[2026-04-10T14:08:25Z] [iter=5] Step 3: Starting LSP resolution mem_mb=1790 MB already_completed_types=[] already_completed_files=139
+[2026-04-10T14:08:25Z] [iter=5] Resolving target type target_type=call_site count=40689
+[2026-04-10T14:08:26Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=2.8 files_done=0 resolved=0 errors=0 current=sphinx/ext/autodoc/_dynamic/_loader.py
+[2026-04-10T14:13:09Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=7.6 files_done=1 resolved=25 errors=91 current=sphinx/transforms/i18n.py
+[2026-04-10T14:19:19Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=13.7 files_done=2 resolved=63 errors=211 current=sphinx/transforms/post_transforms/__init__.py
+[2026-04-10T14:22:34Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=17.0 files_done=3 resolved=78 errors=274 current=tests/roots/test-root/conf.py
+[2026-04-10T14:24:47Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=19.2 files_done=5 resolved=85 errors=317 current=tests/test_builders/test_build_epub.py
+[2026-04-10T14:34:39Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=29.1 files_done=6 resolved=121 errors=508 current=tests/test_util/test_util_matching.py
+[2026-04-10T14:38:37Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=33.0 files_done=7 resolved=130 errors=585 current=sphinx/roles.py
+[2026-04-10T14:44:20Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=38.7 files_done=8 resolved=154 errors=696 current=sphinx/util/osutil.py
+[2026-04-10T14:45:59Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=40.4 files_done=9 resolved=187 errors=728 current=sphinx/domains/cpp/__init__.py
+[2026-04-10T15:00:12Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=54.6 files_done=10 resolved=222 errors=1002 current=sphinx/builders/__init__.py
+[2026-04-10T15:09:58Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=64.4 files_done=11 resolved=277 errors=1191 current=sphinx/ext/autodoc/_directive_options.py
+[2026-04-10T15:11:16Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=65.7 files_done=12 resolved=305 errors=1216 current=tests/test_intl/test_locale.py
+[2026-04-10T15:13:23Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=67.8 files_done=13 resolved=305 errors=1257 current=sphinx/util/parsing.py
+[2026-04-10T15:14:54Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=69.3 files_done=16 resolved=310 errors=1286 current=sphinx/ext/autosectionlabel.py
+[2026-04-10T15:15:34Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=70.0 files_done=17 resolved=314 errors=1299 current=tests/test_builders/test_build_texinfo.py
+[2026-04-10T15:17:01Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=71.4 files_done=18 resolved=323 errors=1327 current=sphinx/ext/autodoc/_generate.py
+[2026-04-10T15:19:17Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=73.7 files_done=19 resolved=333 errors=1371 current=sphinx/environment/collectors/__init__.py
+[2026-04-10T15:20:29Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=74.9 files_done=21 resolved=346 errors=1394 current=tests/roots/test-ext-autodoc/target/enums.py
+[2026-04-10T15:24:24Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=78.8 files_done=23 resolved=426 errors=1470 current=sphinx/environment/adapters/indexentries.py
+[2026-04-10T15:26:58Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=81.4 files_done=24 resolved=436 errors=1520 current=sphinx/ext/autodoc/_dynamic/_mock.py
+[2026-04-10T15:28:00Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=82.4 files_done=25 resolved=459 errors=1540 current=sphinx/versioning.py
+[2026-04-10T15:28:56Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=83.4 files_done=26 resolved=486 errors=1558 current=sphinx/util/_io.py
+[2026-04-10T15:31:09Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=85.6 files_done=28 resolved=494 errors=1601 current=tests/test_builders/conftest.py
+[2026-04-10T15:32:14Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=86.7 files_done=30 resolved=498 errors=1622 current=sphinx/directives/other.py
+[2026-04-10T15:36:01Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=90.4 files_done=31 resolved=528 errors=1695 current=tests/roots/test-api-set-translator/conf.py
+[2026-04-10T15:36:35Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=91.0 files_done=32 resolved=528 errors=1706 current=sphinx/ext/autodoc/_dynamic/_type_annotations.py
+[2026-04-10T15:41:19Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=95.7 files_done=34 resolved=554 errors=1797 current=tests/roots/test-environment-record-dependencies/conf.py
+[2026-04-10T15:45:51Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=100.3 files_done=36 resolved=599 errors=1884 current=tests/test_transforms/test_transforms_move_module_targets.py
+[2026-04-10T15:47:00Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=101.4 files_done=37 resolved=606 errors=1906 current=sphinx/ext/intersphinx/_resolve.py
+[2026-04-10T15:51:31Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=105.9 files_done=38 resolved=630 errors=1993 current=sphinx/util/parallel.py
+[2026-04-10T15:53:08Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=107.5 files_done=39 resolved=642 errors=2024 current=sphinx/ext/mathjax.py
+[2026-04-10T15:55:57Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=110.4 files_done=40 resolved=659 errors=2078 current=sphinx/_cli/util/colour.py
+[2026-04-10T15:57:09Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=111.6 files_done=41 resolved=668 errors=2101 current=tests/test_util/test_util_lines.py
+[2026-04-10T15:57:46Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=112.2 files_done=42 resolved=668 errors=2113 current=tests/test_project.py
+[2026-04-10T15:59:09Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=113.6 files_done=43 resolved=672 errors=2140 current=tests/roots/test-ext-autodoc/target/annotated.py
+[2026-04-10T16:00:15Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=114.7 files_done=45 resolved=676 errors=2161 current=sphinx/jinja2glue.py
+[2026-04-10T16:01:27Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=115.9 files_done=46 resolved=706 errors=2184 current=tests/test_ext_autodoc/test_ext_autodoc_signatures.py
+[2026-04-10T16:04:28Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=118.9 files_done=47 resolved=723 errors=2242 current=tests/test_markup/test_parser.py
+[2026-04-10T16:05:12Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=119.6 files_done=48 resolved=729 errors=2256 current=tests/test_util/test_util_nodes.py
+[2026-04-10T16:06:53Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=121.3 files_done=49 resolved=746 errors=2289 current=sphinx/ext/apidoc/_generate.py
+[2026-04-10T16:10:23Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=124.8 files_done=50 resolved=787 errors=2357 current=tests/test_domains/test_domain_py.py
+[2026-04-10T16:21:55Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=136.3 files_done=51 resolved=842 errors=2581 current=sphinx/util/requests.py
+[2026-04-10T16:22:42Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=137.1 files_done=52 resolved=857 errors=2596 current=sphinx/_cli/util/errors.py
+[2026-04-10T16:24:59Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=139.4 files_done=53 resolved=875 errors=2640 current=sphinx/ext/apidoc/__init__.py
+[2026-04-10T16:25:37Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=140.0 files_done=54 resolved=886 errors=2652 current=tests/utils.py
+[2026-04-10T16:26:27Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=140.9 files_done=55 resolved=907 errors=2668 current=sphinx/domains/cpp/_ids.py
+[2026-04-10T16:28:32Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=142.9 files_done=57 resolved=922 errors=2708 current=sphinx/search/zh.py
+[2026-04-10T16:34:07Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=148.5 files_done=59 resolved=965 errors=2816 current=sphinx/builders/changes.py
+[2026-04-10T16:36:43Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=151.1 files_done=60 resolved=977 errors=2866 current=sphinx/util/index_entries.py
+[2026-04-10T16:37:17Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=151.7 files_done=63 resolved=986 errors=2877 current=tests/test_builders/test_build_gettext.py
+[2026-04-10T16:40:17Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=154.7 files_done=64 resolved=1004 errors=2934 current=sphinx/builders/text.py
+[2026-04-10T16:41:10Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=155.6 files_done=65 resolved=1008 errors=2951 current=sphinx/util/display.py
+[2026-04-10T16:42:13Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=156.6 files_done=66 resolved=1015 errors=2971 current=tests/test_directives/test_directives_no_typesetting.py
+[2026-04-10T16:42:50Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=157.3 files_done=67 resolved=1022 errors=2983 current=tests/test_directives/test_directive_other.py
+[2026-04-10T16:45:15Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=159.7 files_done=68 resolved=1038 errors=3029 current=tests/test_util/test_util_rst.py
+[2026-04-10T16:46:45Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=161.2 files_done=69 resolved=1046 errors=3057 current=tests/test_versioning.py
+[2026-04-10T16:48:02Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=162.4 files_done=70 resolved=1064 errors=3081 current=tests/test_extensions/test_ext_graphviz.py
+[2026-04-10T16:48:55Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=163.3 files_done=71 resolved=1082 errors=3098 current=sphinx/transforms/post_transforms/images.py
+[2026-04-10T16:51:50Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=166.2 files_done=72 resolved=1106 errors=3154 current=sphinx/util/fileutil.py
+[2026-04-10T16:53:36Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=168.0 files_done=73 resolved=1120 errors=3188 current=sphinx/ext/autodoc/_property_types.py
+[2026-04-10T16:57:31Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=171.9 files_done=75 resolved=1127 errors=3264 current=tests/test_theming/test_templating.py
+[2026-04-10T16:58:55Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=173.3 files_done=77 resolved=1141 errors=3291 current=tests/test_directives/test_directive_only.py
+[2026-04-10T16:59:39Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=174.1 files_done=78 resolved=1155 errors=3305 current=sphinx/ext/autodoc/_names.py
+[2026-04-10T17:00:50Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=175.3 files_done=79 resolved=1156 errors=3328 current=tests/test_util/test_util_display.py
+[2026-04-10T17:02:54Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=177.3 files_done=80 resolved=1159 errors=3368 current=sphinx/ext/autodoc/importer.py
+[2026-04-10T17:05:42Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=180.1 files_done=81 resolved=1171 errors=3422 current=sphinx/testing/util.py
+[2026-04-10T17:06:47Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=181.2 files_done=82 resolved=1212 errors=3442 current=sphinx/environment/collectors/title.py
+[2026-04-10T17:08:37Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=183.0 files_done=84 resolved=1227 errors=3477 current=tests/roots/test-ext-autodoc/target/singledispatch.py
+[2026-04-10T17:09:56Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=184.3 files_done=86 resolved=1236 errors=3502 current=sphinx/util/http_date.py
+[2026-04-10T17:11:54Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=186.3 files_done=88 resolved=1253 errors=3539 current=sphinx/util/docstrings.py
+[2026-04-10T17:13:11Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=187.6 files_done=89 resolved=1260 errors=3563 current=tests/test_directives/test_directive_object_description.py
+[2026-04-10T17:13:57Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=188.4 files_done=90 resolved=1270 errors=3578 current=sphinx/util/_pathlib.py
+[2026-04-10T17:15:06Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=189.5 files_done=91 resolved=1313 errors=3600 current=sphinx/search/da.py
+[2026-04-10T17:15:52Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=190.3 files_done=94 resolved=1318 errors=3615 current=sphinx/domains/changeset.py
+[2026-04-10T17:17:50Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=192.3 files_done=95 resolved=1322 errors=3653 current=sphinx/ext/autodoc/_directive.py
+[2026-04-10T17:18:35Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=193.0 files_done=96 resolved=1322 errors=3667 current=sphinx/ext/autodoc/_sentinels.py
+[2026-04-10T17:20:06Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=194.5 files_done=98 resolved=1339 errors=3696 current=tests/test_domains/test_domain_std.py
+[2026-04-10T17:23:28Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=197.9 files_done=99 resolved=1368 errors=3759 current=sphinx/util/_uri.py
+[2026-04-10T17:24:00Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=198.4 files_done=101 resolved=1374 errors=3769 current=tests/test_directives/test_directive_patch.py
+[2026-04-10T17:25:24Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=199.8 files_done=102 resolved=1385 errors=3796 current=sphinx/ext/autodoc/_dynamic/_importer.py
+[2026-04-10T17:28:39Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=203.1 files_done=103 resolved=1415 errors=3859 current=tests/test_command_line.py
+[2026-04-10T17:30:27Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=204.9 files_done=104 resolved=1420 errors=3894 current=tests/test_util/test_util_inventory.py
+[2026-04-10T17:31:54Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=206.3 files_done=105 resolved=1427 errors=3922 current=utils/babel_runner.py
+[2026-04-10T17:34:44Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=209.1 files_done=106 resolved=1455 errors=3977 current=sphinx/directives/code.py
+[2026-04-10T17:38:43Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=213.1 files_done=107 resolved=1490 errors=4055 current=sphinx/environment/collectors/metadata.py
+[2026-04-10T17:40:19Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=214.7 files_done=109 resolved=1509 errors=4086 current=sphinx/ext/autodoc/_dynamic/_preserve_defaults.py
+[2026-04-10T17:41:27Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=215.9 files_done=110 resolved=1525 errors=4108 current=tests/test_writers/test_writer_latex.py
+[2026-04-10T17:42:07Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=216.5 files_done=111 resolved=1525 errors=4121 current=sphinx/ext/intersphinx/_cli.py
+[2026-04-10T17:44:04Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=218.5 files_done=113 resolved=1539 errors=4159 current=sphinx/search/__init__.py
+[2026-04-10T17:50:16Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=224.7 files_done=114 resolved=1604 errors=4279 current=tests/test_writers/test_api_translator.py
+[2026-04-10T17:50:50Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=225.2 files_done=115 resolved=1607 errors=4290 current=tests/test_errors.py
+[2026-04-10T17:52:36Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=227.0 files_done=119 resolved=1640 errors=4324 current=tests/test_builders/test_build_html_image.py
+[2026-04-10T17:53:26Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=227.8 files_done=120 resolved=1646 errors=4340 current=sphinx/ext/intersphinx/__init__.py
+[2026-04-10T17:54:00Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=228.4 files_done=121 resolved=1652 errors=4351 current=tests/roots/test-ext-imgmockconverter/mocksvgconverter.py
+[2026-04-10T17:56:14Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=230.6 files_done=123 resolved=1654 errors=4394 current=tests/roots/test-ext-autosummary-module_empty_all/conf.py
+[2026-04-10T17:58:46Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=233.2 files_done=126 resolved=1676 errors=4443 current=sphinx/search/ro.py
+[2026-04-10T17:59:45Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=234.2 files_done=129 resolved=1683 errors=4462 current=tests/test_builders/test_build_all.py
+[2026-04-10T18:00:34Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=235.0 files_done=130 resolved=1687 errors=4478 current=sphinx/ext/intersphinx/_shared.py
+[2026-04-10T18:02:32Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=236.9 files_done=132 resolved=1716 errors=4516 current=tests/test_builders/test_build_html_download.py
+[2026-04-10T18:03:18Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=237.7 files_done=133 resolved=1723 errors=4531 current=tests/test_util/test_util_inspect_py314.py
+[2026-04-10T18:04:20Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=238.8 files_done=135 resolved=1735 errors=4551 current=tests/test_extensions/test_ext_ifconfig.py
+[2026-04-10T18:05:10Z] [iter=5] HEARTBEAT target_type=call_site elapsed_min=239.6 files_done=137 resolved=1740 errors=4567 current=sphinx/ext/autodoc/_legacy_class_based/_directive_options.py
+[2026-04-10T18:05:36Z] [iter=5] CHECKPOINT TRIGGERED elapsed_min=240.0 files_completed=276 new_files_this_iter=137 mem_mb=1837 MB
+[2026-04-10T18:05:36Z] [iter=5] Writing partial enrichment graph path=/home/runner/work/forx/forx/storage/aggregate/lsp/cc7c6f435ad37bb12264f8118c8461b230e6830c.nq.gz triples=171010
+[2026-04-10T18:05:40Z] [iter=5] Checkpoint written, exiting with code 7
+[2026-04-10T18:05:40Z] [iter=5] PHASE END: enrich (checkpointed) elapsed_s=14401 elapsed_min=240.0 files_completed=276
